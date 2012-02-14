@@ -1310,6 +1310,9 @@ i.github {
 i.twitter {
   background-position: 0 0;
 }
+iframe {
+  border: 0;
+}
 .pull-right {
   float: right;
 }
