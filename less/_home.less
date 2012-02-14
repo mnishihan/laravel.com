@@ -1,0 +1,188 @@
+/*!
+ * Laravel
+ *
+ * Copyright 2012 Laravel
+ *
+ * Designed and built with wearefixel, bootstrap,
+ * sublime text, and love. (It is valentines day).
+ *
+ */
+
+body {
+	background: #252626;
+}
+a.yellow {
+	font-family: @sansFont;
+	font-size: 14px;
+	font-weight: @bold;
+	line-height: 24px;
+	color: #fbcc62;
+	text-transform: uppercase;
+}
+header {
+	background: #e9edee url(../img/bg-head.png) repeat-x top left;
+	height: 116px;
+	position:relative;
+	padding: 0;
+	h1 {
+		height: 62px;
+		background: url(../img/laravel.png) no-repeat;
+		text-indent: -90000px;
+		margin: 20px 0;
+	}
+	ul.nav.pull-right {
+		margin: 36px 0;
+		position: relative;
+		display: block;
+	}
+	.navbar .nav li.download {
+		margin-left: 3px;
+		a {
+			display:block;
+			width:103px;
+			height:31px;
+			line-height:31px;
+			padding:0;
+			margin:0;
+			background:url(../img/icons/download.png) no-repeat 0 0;
+			color: #fff;
+			text-align: center;
+		}
+	}
+
+	a {
+		font-family: "proxima-nova",sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 36px;
+		color: #2f3030;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #fb503b;
+		text-decoration: none;
+	}
+}
+
+.midcontent {
+	padding: 50px 0;
+	background: #2f3030 url(../img/bg-down.png) no-repeat center top;
+
+	.screencast {
+		background: url(../img/bg-screencast.png) no-repeat right center;
+		position: relative;
+		.video {
+			background: url(../img/bg-screencast-holder.png) no-repeat;
+			height: 244px;
+		}
+		.introduction {
+			padding: 40px 0;
+			color: #c8cccc;
+			h2 {
+				color: #fff;
+			}
+		}
+	}
+
+	.boxes {
+		color: #c8cccc;
+		font-family: @baseFontFamily;
+		font-size: @baseFontSize;
+		line-height: @baseLineHeight;
+		margin-top: 36px;
+		position: relative;
+		h2 {
+			color: #fff;
+		}
+		.documentation {
+			background: url(../img/icons/documentation.png) no-repeat 5px top;
+			padding-left: 65px;
+			margin-bottom: 36px;
+		}
+		.bundles {
+			background: url(../img/icons/bundle.png) no-repeat 5px top;
+			padding-left: 65px;
+			margin-bottom: 36px;
+		}
+		.testimonials {
+			background: url(../img/icons/testimonial.png) no-repeat 5px top;
+			padding-left: 65px;
+			margin-bottom: 36px;
+		}
+		.github {
+			background: url(../img/icons/github.png) no-repeat 5px top;
+			padding-left: 65px;
+			margin-bottom: 36px;
+			position: relative;
+			h2:before{
+				content:"";
+				position: absolute;
+				top: -20px;
+				right: 80px;
+				background: url(../img/icons/seewhatwedid.png) no-repeat;
+				width: 162px;
+				height: 19px;
+			}
+		}
+	}
+}
+
+footer {
+	background: url(../img/bg-footer.png) repeat-x left top;
+	.container {
+		background: url(../img/bg-footer-fade.png) no-repeat center top;
+	}
+	ul {
+		margin: 36px 0;
+	}
+	li {
+		display: inline;
+		margin: 0 6px 0 0;
+		a {
+			padding: 6px;
+			font-size: 12px;
+			line-height: @baseLineHeight;
+		}
+	}
+	li.download a {
+		border: 1px solid #474540;
+		border-radius: 5px;
+		padding: 6px 0px 6px 6px;
+		color: @yellow;
+	}
+	li.download a:hover {
+		color: #fff;
+	}
+
+
+	a {
+		color: #eaeeef;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @yellow;
+		text-decoration: none;
+	}
+	.social {
+		text-align: right;
+	}
+}
+
+i {
+	display: inline-block;
+	background-image: url(../img/icons/sprite.png);
+	width: 16px;
+	height: 16px;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+	.ie7-restore-right-whitespace();
+}
+i.download {
+	background-position: -35px 0;
+}
+i.github {
+	background-position: -18px 0;
+}
+i.twitter {
+	background-position: 0 0;
+}
