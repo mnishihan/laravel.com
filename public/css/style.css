@@ -1302,13 +1302,13 @@ i {
 i:last-child {
   *margin-left: 0;
 }
-i.download {
+i .download {
   background-position: -35px 0;
 }
-i.github {
+i .github {
   background-position: -18px 0;
 }
-i.twitter {
+i .twitter {
   background-position: 0 0;
 }
 iframe {
