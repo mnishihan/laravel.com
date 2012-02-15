@@ -1288,6 +1288,9 @@ footer li.download a {
 footer li.download a:hover {
   color: #fff;
 }
+footer li.download a:hover i {
+  background-position: -51px 0;
+}
 footer a {
   color: #eaeeef;
   text-decoration: none;
@@ -1312,7 +1315,7 @@ i:last-child {
   *margin-left: 0;
 }
 i.download {
-  background-position: -35px 0;
+  background-position: -34px 0;
 }
 i.github {
   background-position: -18px 0;
