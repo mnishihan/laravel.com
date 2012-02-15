@@ -537,10 +537,10 @@ cite {
   display: block;
   padding: 3px 15px;
   clear: both;
-  line-height: 26px;
+  line-height: 24px;
   color: #555555;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
@@ -1006,7 +1006,7 @@ cite {
 .navbar .nav > li > a {
   float: none;
   padding: 7px 11px 11px;
-  line-height: 19px;
+  line-height: 24px;
   color: #2f3030;
   text-decoration: none;
 }
