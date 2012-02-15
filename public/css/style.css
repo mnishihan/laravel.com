@@ -1095,6 +1095,8 @@ cite {
   right: 13px;
 }
 .hero-unit {
+  z-index: 5;
+  margin-top: -8px;
   background-color: #e9edee;
   min-height: 212px;
   position: relative;
@@ -1150,10 +1152,11 @@ a.yellow {
   text-transform: uppercase;
 }
 header {
-  background: #e9edee url(../img/bg-head.png) repeat-x top left;
+  background: transparent url(../img/bg-head.png) repeat-x top left;
   height: 116px;
   position: relative;
   padding: 0;
+  z-index: 10;
 }
 header h1 {
   height: 62px;
