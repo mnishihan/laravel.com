@@ -1963,6 +1963,9 @@ iframe {
 .sidebar ul li li {
   border: none;
 }
+.sidebar ul li:last-child {
+  border-bottom: 1px dashed #6a6a6a;
+}
 .sidebar ul li.open a {
   background: url(../img/icons/minus.png) no-repeat right center;
   padding-right: 10px;
