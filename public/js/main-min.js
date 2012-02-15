@@ -1,6 +1,4 @@
-/*********************************************** 
-     Begin bootstrap-dropdown.js 
-***********************************************//* ============================================================
+/* ============================================================
  * bootstrap-dropdown.js v2.0.0
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================
@@ -17,4 +15,103 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * ============================================================ */!function(a){function d(){a(b).parent().removeClass("open")}"use strict";var b='[data-toggle="dropdown"]',c=function(b){var c=a(b).on("click.dropdown.data-api",this.toggle);a("html").on("click.dropdown.data-api",function(){c.parent().removeClass("open")})};c.prototype={constructor:c,toggle:function(b){var c=a(this),e=c.attr("data-target"),f,g;if(!e){e=c.attr("href");e=e&&e.replace(/.*(?=#[^\s]*$)/,"")}f=a(e);f.length||(f=c.parent());g=f.hasClass("open");d();!g&&f.toggleClass("open");return!1}};a.fn.dropdown=function(b){return this.each(function(){var d=a(this),e=d.data("dropdown");e||d.data("dropdown",e=new c(this));typeof b=="string"&&e[b].call(d)})};a.fn.dropdown.Constructor=c;a(function(){a("html").on("click.dropdown.data-api",d);a("body").on("click.dropdown.data-api",b,c.prototype.toggle)})}(window.jQuery);
+ * ============================================================ */
+!function( $ ){
+
+  "use strict"
+
+ /* DROPDOWN CLASS DEFINITION
+  * ========================= */
+
+  var toggle = '[data-toggle="dropdown"]'
+    , Dropdown = function ( element ) {
+        var $el = $(element).on('click.dropdown.data-api', this.toggle)
+        $('html').on('click.dropdown.data-api', function () {
+          $el.parent().removeClass('open')
+        })
+      }
+
+  Dropdown.prototype = {
+
+    constructor: Dropdown
+
+  , toggle: function ( e ) {
+      var $this = $(this)
+        , selector = $this.attr('data-target')
+        , $parent
+        , isActive
+
+      if (!selector) {
+        selector = $this.attr('href')
+        selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
+      }
+
+      $parent = $(selector)
+      $parent.length || ($parent = $this.parent())
+
+      isActive = $parent.hasClass('open')
+
+      clearMenus()
+      !isActive && $parent.toggleClass('open')
+
+      return false
+    }
+
+  }
+
+  function clearMenus() {
+    $(toggle).parent().removeClass('open')
+  }
+
+
+  /* DROPDOWN PLUGIN DEFINITION
+   * ========================== */
+
+  $.fn.dropdown = function ( option ) {
+    return this.each(function () {
+      var $this = $(this)
+        , data = $this.data('dropdown')
+      if (!data) $this.data('dropdown', (data = new Dropdown(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  $.fn.dropdown.Constructor = Dropdown
+
+
+  /* APPLY TO STANDARD DROPDOWN ELEMENTS
+   * =================================== */
+
+  $(function () {
+    $('html').on('click.dropdown.data-api', clearMenus)
+    $('body').on('click.dropdown.data-api', toggle, Dropdown.prototype.toggle)
+  })
+
+}( window.jQuery )
+
+
+/*********************************************** 
+     Begin main.js 
+***********************************************/ 
+
+$(document).ready(function() {
+	$.fn.slideFadeToggle = function(speed, easing, callback) {
+		return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+	};
+
+	$('.sidebar ul ul').hide();
+
+	$('.sidebar ul ul').each(function() {
+		$(this).parent('li').addClass('close');
+	});
+
+	$('.sidebar li a').click(function(){
+		if ($(this).parent('li').hasClass('open')) {
+			$(this).parent('li').removeClass('open').addClass('close');
+		} else {
+			$(this).parent('li').removeClass('close').addClass('open');
+		}
+		$(this).next('ul').slideFadeToggle('slow').show();
+		return false;
+	});
+});

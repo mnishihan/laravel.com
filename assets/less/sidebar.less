@@ -1,0 +1,49 @@
+.sidebar {
+	h3 {
+		color: #fff;
+		margin-bottom: 12px;
+	}
+	a {
+		color: #fbcc62;
+		//display: block;
+	}
+	ul {
+		margin-left: 0;
+		list-style: none;
+		li {
+			border-top: 1px dashed #6a6a6a;
+			padding: 5px 0;
+			margin: 0;
+			a {
+				margin-bottom: 0;
+			}
+			ul {
+				margin: 0 0 0 15px;
+			}
+			li {
+				border: none;
+			}
+		}
+		li.open {
+			a {
+				background: url(../img/icons/minus.png) no-repeat right center;
+				padding-right: 10px;
+			}
+			li {
+				display: block;
+				a {
+					background: none;
+				}
+			}
+		}
+		li.close {
+			a {
+				background: url(../img/icons/plus.png) no-repeat right center;
+				padding-right: 10px;
+			}
+			li a {
+				background: none;
+			}
+		}
+	}
+}
