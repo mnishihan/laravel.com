@@ -1972,6 +1972,7 @@ iframe {
 }
 .sidebar ul li.open li {
   display: block;
+  border: none;
 }
 .sidebar ul li.open li a {
   background: none;
