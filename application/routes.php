@@ -47,11 +47,39 @@ Route::get('typography', function()
 		->nest('header', 'partials.header')
 		->nest('footer', 'partials.footer');
 });
+
 Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 {
-	$api = IoC::resolve('laravel.docs.api');
-	$markdown = $api->page($section, $page, 'develop');
-	var_dump($markdown);
+	$content = '';
+
+	if ($section and $page and is_file(path('storage').'docs/'.$section.'/'.$page.'.md'))
+	{
+		$contents = File::get(path('storage').'docs/'.$section.'/'.$page.'.md');
+	}
+	elseif ($section and is_file(path('storage').'docs/'.$section.'.md'))
+	{
+		$contents = File::get(path('storage').'docs/'.$section.'.md');
+	}
+
+	if ($contents)
+	{
+		require_once(path('bundle').'markdown-extra-extended/markdown_extended.php');
+		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
+	}
+
+	$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
+
+	// For some reason the list is getting br tags.
+	$sidebar = str_replace('<br />', '', $sidebar);
+
+	// Make it work locally
+	$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
+
+	return View::make('docs.index')
+		->nest('header', 'partials.header')
+		->nest('footer', 'partials.footer')
+		->with('sidebar', $sidebar)
+		->with('content', $content);
 });
 
 /*

@@ -34,6 +34,5 @@
 */
 
 return array(
-	'docs-api',
-	'php-github-api'
+	'markdown-extra-extended'
 );
