@@ -34,5 +34,7 @@
 */
 
 return array(
-	'markdown-extra-extended'
+	'markdown-extra-extended' => array(
+		'auto' => true
+	)
 );

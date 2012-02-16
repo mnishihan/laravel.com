@@ -2,7 +2,7 @@
 
 <div class="container main">
 	<div class="row">
-		<div class="sidebar span3">
+		<div class="sidebar span3 <?php echo $section ?>">
 			<?php echo $sidebar ?>
 		</div>
 		<div class="content docs span9">

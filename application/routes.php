@@ -63,8 +63,8 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 
 	if ($contents)
 	{
-		require_once(path('bundle').'markdown-extra-extended/markdown_extended.php');
 		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
+		$content = str_replace('/docs', URL::to().'docs', $content);
 	}
 
 	$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
@@ -76,9 +76,11 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 	$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
 
 	return View::make('docs.index')
-		->nest('header', 'partials.header')
+		->nest('header', 'partials.header', array('section' => $section, 'page' => $page))
 		->nest('footer', 'partials.footer')
 		->with('sidebar', $sidebar)
+		->with('section', $section)
+		->with('page', $page)
 		->with('content', $content);
 });
 

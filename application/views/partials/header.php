@@ -33,7 +33,7 @@
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li><a href="#">DOCUMENTATION</a></li>
+											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
 											<li><a href="#">SCREENCASTS</a></li>
 											<li class="divider"></li>
 											<li><a href="#">DEVELOPER API</a></li>
