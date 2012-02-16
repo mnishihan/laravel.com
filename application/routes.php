@@ -47,10 +47,11 @@ Route::get('typography', function()
 		->nest('header', 'partials.header')
 		->nest('footer', 'partials.footer');
 });
-
-Route::get('docs/(:any)', function()
+Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 {
-
+	$api = IoC::resolve('laravel.docs.api');
+	$markdown = $api->page($section, $page, 'develop');
+	var_dump($markdown);
 });
 
 /*
