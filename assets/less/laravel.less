@@ -76,6 +76,8 @@ header {
 	}
 }
 
+// Home Page Content
+//------------------
 .midcontent {
 	padding: 50px 0;
 	background: #2f3030 url(../img/bg-down.png) no-repeat center top;
@@ -138,6 +140,26 @@ header {
 			}
 		}
 	}
+}
+
+// Main Content
+// ------------
+.main {
+	margin-top: 40px;
+}
+.content.docs .well blockquote {
+	background-color: #FFEBE8;
+	padding: 10px;
+	border: 1px solid #f4aea4;
+	margin: 0 0 10px 0;
+	.border-radius(4px);
+	.box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+}
+
+.content.docs h2 {
+	margin: 20px 0;
+	padding-top: 20px;
+	border-top: 2px dashed #9e9e9e;
 }
 
 footer {
@@ -204,43 +226,3 @@ i {
 	}
 }
 
-iframe {
-	border: 0;
-}
-
-/*
-|--------------------------------------------------------------------------
-| UItoTop jQuery Plugin 1.1
-| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
-|--------------------------------------------------------------------------
-*/
-
-#toTop {
-	display:none;
-	text-decoration:none;
-	position:fixed;
-	bottom:25px;
-	right:10px;
-	overflow:hidden;
-	width:51px;
-	height:51px;
-	border:none;
-	text-indent:-999px;
-	background:url(../img/icons/ui.totop.png) no-repeat left top;
-}
-
-#toTopHover {
-	background:url(../img/icons/ui.totop.png) no-repeat left -51px;
-	width:51px;
-	height:51px;
-	display:block;
-	overflow:hidden;
-	float:left;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
-}
-
-#toTop:active, #toTop:focus {
-	outline:none;
-}
