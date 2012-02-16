@@ -35,7 +35,15 @@
 
 Route::get('/, home', function()
 {
+	$quotes = array(
+		array('name' => 'Dayle Rees', 'quote' => 'Laravel is a pleasure to work with, it has turned web application development into an art form.'),
+		array('name' => 'Phill Sparks', 'quote' => 'Laravel has brought the fun back to programming; it’s so expressive it speaks my language.'),
+	);
+
+	$quote = $quotes[rand(0, count($quotes) -1)];
+
 	return View::make('home.index')
+		->with('quote', $quote)
 		->nest('header', 'partials.header')
 		->nest('footer', 'partials.footer');
 });

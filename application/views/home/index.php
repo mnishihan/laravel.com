@@ -16,10 +16,10 @@
 			<div class="video span5">
 				<iframe src="http://www.screenr.com/embed/yPVs" width="385" height="235"></iframe>
 			</div>
-			<div class="introduction span7">
-				<h3>A QUICK INTRODUCTION TO LARAVEL</h3>
-				<p>Lorem ipsum is some text</p>
-				<a href="#" class="yellow">view documentation &raquo;</a>
+			<div class="introduction span6">
+				<h3>A QUICK INTRODUCTION TO LARAVEL 3.0</h3>
+				<p>In this screencast Taylor Otwell, the author of Laravel, covers the highlights of Laravel 3.0 so you can
+				get a glimpse of its elegant routing and expressive syntax. This is a great place to start learning!</p>
 			</div>
 		</div>
 
@@ -27,30 +27,30 @@
 			<div class="span6">
 				<div class="documentation">
 					<h3>INCREDIBLY WELL DOCUMENTED</h3>
-					<p>Vivamus luctus urna sed urna ultricies acOCtempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod.</p>
-					<a href="#" class="yellow">view documentation &raquo;</a>
+					<p>A class API just doesn't cut it. Laravel has great documentation to help you get up to speed as quickly as possible. It's readable and thorough. You'll love it.</p>
+					<a href="<?php echo url('docs'); ?>" class="yellow">view documentation &raquo;</a>
 				</div>
 			</div>
 			<div class="span6">
 				<div class="bundles">
-					<h3>GET SOME BUNDLES</h3>
-					<p>Vivamus luctus urna sed urna ultricies acOCtempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod.</p>
-					<a href="#" class="yellow">BUNDLE LIBRARY &raquo;</a>
+					<h3>GRAB SOME BUNDLES</h3>
+					<p>Bundles are a great way to package and share Laravel code. They can be anything - from a complete ORM or simple debugging tools, and it's a breeze to drop them into your application!</p>
+					<a href="http://bundles.laravel.com" class="yellow">BUNDLE LIBRARY &raquo;</a>
 				</div>
 			</div>
 			<div class="span6">
 				<div class="testimonials">
 					<h3>ALL THE COOL KIDS ARE DOING IT</h3>
 					<blockquote>
-					<p>Laravel just flat out rocks! No other framework holds a candle to the beutiful expressive syntax. I would trade Kimmy Gibbler for it any day.</p>
-					<small>Danny Tanner <cite title="">FULL HOUSE, Inc</cite></small>
-						</blockquote>
+					<p>"<?php echo $quote['quote']; ?>"</p>
+					<small><?php echo $quote['name']; ?></small>
+					</blockquote>
 				</div>
 			</div>
 			<div class="span6">
 				<div class="github">
-					<h3>WHAT THE FORK?</h3>
-					<p>Vivamus luctus urna sed urna ultricies acOCtempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod.</p>
+					<h3>BE A CONTRIBUTOR</h3>
+					<p>Laravel is open-source software. All of the code is available on Github and anyone can contribute, so go fork the repository and make a pull request!</p>
 					<a href="http://github.com/laravel" class="yellow">VIEW ON GITHUB &raquo;</a>
 				</div>
 			</div>
