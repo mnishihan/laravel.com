@@ -42,8 +42,7 @@
 				<div class="testimonials">
 					<h3>ALL THE COOL KIDS ARE DOING IT</h3>
 					<blockquote>
-					<p>"<?php echo $quote['quote']; ?>"</p>
-					<small><?php echo $quote['name']; ?></small>
+					<p>"<?php echo $quote['quote']; ?>" <small><?php echo $quote['name']; ?> <cite title=""><?php echo $quote['title']; ?></cite></small></p>
 					</blockquote>
 				</div>
 			</div>
