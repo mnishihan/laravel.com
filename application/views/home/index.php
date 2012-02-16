@@ -48,7 +48,7 @@
 			</div>
 			<div class="span6">
 				<div class="github">
-					<h3>BE A CONTRIBUTOR</h3>
+					<h3>NOW GIT TO WORK!</h3>
 					<p>Laravel is open-source software. All of the code is available on Github and anyone can contribute, so go fork the repository and make a pull request!</p>
 					<a href="http://github.com/laravel" class="yellow">VIEW ON GITHUB &raquo;</a>
 				</div>
