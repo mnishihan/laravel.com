@@ -68,6 +68,10 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 	{
 		$contents = File::get(path('storage').'docs/'.$section.'.md');
 	}
+	else
+	{
+		$contents = File::get(path('storage').'docs/home.md');
+	}
 
 	if ($contents)
 	{

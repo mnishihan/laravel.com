@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<ul class="span7">
-						<li><a href="#">Home</a></li>
+						<li><a href="<?php echo URL::to(); ?>">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="http://forums.laravel.com">Forums</a></li>
 						<li><a href="http://bundles.laravel.com">Bundles</a></li>
@@ -24,8 +24,6 @@
 		<script>window.jQuery || document.write('<script src="<?php echo URL::to_asset('js/jquery-1.7.1.min.js'); ?>"><\/script>')</script>
 		<script src="<?php echo URL::to_asset('js/main-min.js'); ?>"></script>
 		<script src="<?php echo URL::to_asset('js/google-code-prettify/prettify.js'); ?>"></script>
-		<script src="<?php echo URL::to_asset('js/jquery.easing.js'); ?>"></script>
-		<script src="<?php echo URL::to_asset('js/jquery.totop.js'); ?>"></script>
 		<script>$(function(){prettyPrint()})</script>
 	</body>
 </html>

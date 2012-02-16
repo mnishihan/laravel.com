@@ -1847,15 +1847,18 @@ header a:hover {
   padding-left: 65px;
   margin-bottom: 36px;
   position: relative;
-}
-.midcontent .boxes .github h3:before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  right: 80px;
-  background: url(../img/icons/seewhatwedid.png) no-repeat;
-  width: 162px;
-  height: 19px;
+  /*
+			h3:before{
+				content:"";
+				position: absolute;
+				top: -20px;
+				right: 80px;
+				background: url(../img/icons/seewhatwedid.png) no-repeat;
+				width: 162px;
+				height: 19px;
+			}
+			*/
+
 }
 footer {
   background: url(../img/bg-footer.png) repeat-x left top;
@@ -1932,7 +1935,7 @@ iframe {
   display: none;
   text-decoration: none;
   position: fixed;
-  bottom: 10px;
+  bottom: 25px;
   right: 10px;
   overflow: hidden;
   width: 51px;
