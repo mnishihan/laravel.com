@@ -24,6 +24,8 @@
 		<script>window.jQuery || document.write('<script src="<?php echo URL::to_asset('js/jquery-1.7.1.min.js'); ?>"><\/script>')</script>
 		<script src="<?php echo URL::to_asset('js/main-min.js'); ?>"></script>
 		<script src="<?php echo URL::to_asset('js/google-code-prettify/prettify.js'); ?>"></script>
+		<script src="<?php echo URL::to_asset('js/jquery.easing.js'); ?>"></script>
+		<script src="<?php echo URL::to_asset('js/jquery.totop.js'); ?>"></script>
 		<script>$(function(){prettyPrint()})</script>
 	</body>
 </html>

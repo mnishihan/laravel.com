@@ -8,4 +8,5 @@ $(document).ready(function() {
 			return false;
 		});
 	});
+	$().UItoTop({ easingType: 'easeOutQuart' });
 });
