@@ -26,7 +26,7 @@
 
 							<div class="nav-collapse">
 								<ul class="nav pull-right">
-									<li><a href="#">HOME</a></li>
+									<li><a href="<?php echo URL::to(); ?>">HOME</a></li>
 									<li><a href="#">ABOUT</a></li>
 									<li><a href="http://forums.laravel.com">FORUMS</a></li>
 									<li><a href="http://bundles.laravel.com">BUNDLES</a></li>
@@ -36,7 +36,7 @@
 											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
 											<li><a href="#">SCREENCASTS</a></li>
 											<li class="divider"></li>
-											<li><a href="<?php echo url('api'); ?>">DEVELOPER API</a></li>
+											<li><a href="http://laravel.com/api">DEVELOPER API</a></li>
 										</ul>
 									</li>
 									<li class="download"><a href="http://laravel.com/download">DOWNLOAD</a></li>
