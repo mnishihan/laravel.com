@@ -36,7 +36,7 @@
 											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
 											<li><a href="#">SCREENCASTS</a></li>
 											<li class="divider"></li>
-											<li><a href="#">DEVELOPER API</a></li>
+											<li><a href="<?php echo url('api'); ?>">DEVELOPER API</a></li>
 										</ul>
 									</li>
 									<li class="download"><a href="http://laravel.com/download">DOWNLOAD</a></li>
