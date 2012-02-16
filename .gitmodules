@@ -1,6 +1,0 @@
-[submodule "bundles/docs-api"]
-	path = bundles/docs-api
-	url = git://github.com/laravel/docs-api.git
-[submodule "bundles/php-github-api"]
-	path = bundles/php-github-api
-	url = git://github.com/taylorotwell/php-github-api.git
