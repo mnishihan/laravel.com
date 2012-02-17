@@ -1924,7 +1924,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .hero-unit {
   z-index: 5;
-  margin-top: -8px;
+  margin-top: -15px;
   background-color: #e9edee;
   min-height: 212px;
   position: relative;
@@ -1984,7 +1984,7 @@ a.yellow {
 }
 header {
   background: transparent url(../img/bg-head.png) repeat-x top left;
-  height: 116px;
+  height: 88px;
   position: relative;
   padding: 0;
   z-index: 10;
@@ -2000,9 +2000,10 @@ header h1 a {
   text-indent: -90000px;
   height: 43px;
   width: 161px;
+  margin-top: 0px;
 }
 header ul.nav.pull-right {
-  margin: 36px 0;
+  margin: 23px 0;
   position: relative;
   display: block;
 }
