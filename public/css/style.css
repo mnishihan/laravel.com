@@ -1991,15 +1991,16 @@ header {
   z-index: 10;
 }
 header h1 {
+  float: left;
   height: 62px;
-  margin: 20px 0;
+  margin: 20px 0 0 -20px;
 }
 header h1 a {
   background: url(../img/laravel.png) no-repeat;
   display: block;
   text-indent: -90000px;
-  height: 48px;
-  width: 167px;
+  height: 43px;
+  width: 161px;
 }
 header ul.nav.pull-right {
   margin: 36px 0;
