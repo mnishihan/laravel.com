@@ -1125,7 +1125,7 @@ class Markdown_Parser {
 
 		# trim leading newlines and trailing newlines
 		$codeblock = preg_replace('/\A\n+|\n+\z/', '', $codeblock);
-		$codeblock = str_replace('    ', "\t", $codeblock);
+		$codeblock = str_replace("\t", '  ', $codeblock);
 		$codeblock = "<pre class='prettyprint php'>$codeblock\n</pre>";
 		return "\n\n".$this->hashBlock($codeblock)."\n\n";
 	}
