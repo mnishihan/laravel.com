@@ -2,18 +2,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Laravel - A Clean &amp; Classy PHP Framework</title>
 		<meta name="description" content="Laravel is a clean and classy PHP framework with minimal configuration and expressive syntax. RESTful routing; ORM; beautiful code.">
 		<meta name="keywords" content="php framework, framework, restful routing, restful, clean php">
-		<meta name="author" content="Taylor Otwell">
-		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<meta name="robots" content="index,follow">
+		<meta name="application-name" content="Laravel">
+		<link rel="author" href="humans.txt">
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="shortcut icon" href="<?php echo URL::to_asset('img/favicon.png'); ?>">
 
 		<!-- styles -->
-		<link href="<?php echo URL::to_asset('css/style.css') ?>" rel='stylesheet' type='text/css'>
+		<link href="<?php echo URL::to_asset('css/style.css') ?>" rel="stylesheet" type="text/css">
+
+		<!-- Js for fonts and tracking -->
 		<script type="text/javascript" src="http://use.typekit.com/dlj4kfm.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<link rel="shortcut icon" href="<?php echo URL::to_asset('img/favicon.png'); ?>">
 		<script type="text/javascript" src="<?php echo URL::to_asset('js/modernizr-2.5.2.min.js'); ?>"></script>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-23865777-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</head>
 
 	<body>

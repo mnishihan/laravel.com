@@ -1,0 +1,13 @@
+/* TEAM */
+  Taylor Otwell - @taylorotwell
+  Phill Sparks - @phillsparks
+  Eric Barnes - @ericlbarnes
+
+/* THANKS */
+  UserScape : http://userscape.com
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, Bootstrap
+  Designer: Fixel - http://www.wearefixel.com/
+  Software: Sublime Text 2, CodeKit, Laravel
