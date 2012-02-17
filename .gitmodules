@@ -1,3 +1,0 @@
-[submodule "storage/docs"]
-	path = storage/docs
-	url = git://github.com/laravel/docs.git
