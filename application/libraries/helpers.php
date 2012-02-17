@@ -3,14 +3,14 @@ class Helpers {
 
 	public static function title($content)
 	{
-		if ($title = static::text_between_tag('h1', $content))
+		if ($title = static::text_between_tag($content))
 		{
 			return $title[0]. ' - ';
 		}
 		return null;
 	}
 
-	protected static function text_between_tag($tag, $string)
+	protected static function text_between_tag($string, $tag = 'h1')
 	{
 		$pattern = "/<$tag>(.*?)<\/$tag>/";
 		preg_match_all($pattern, $string, $matches);
