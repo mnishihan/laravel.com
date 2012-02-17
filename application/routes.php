@@ -44,7 +44,7 @@ Route::get('/, home', function()
 
 	return View::make('home.index')
 		->with('quote', $quote)
-		->nest('header', 'partials.header')
+		->nest('header', 'partials.header', array('title' => 'Laravel - A Clean &amp; Classy PHP Framework'))
 		->nest('footer', 'partials.footer');
 });
 
@@ -58,22 +58,7 @@ Route::get('typography', function()
 
 Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 {
-	$content = '';
-
-	if ($section and $page and is_file(path('storage').'docs/'.$section.'/'.$page.'.md'))
-	{
-		$contents = File::get(path('storage').'docs/'.$section.'/'.$page.'.md');
-	}
-	elseif ($section and is_file(path('storage').'docs/'.$section.'.md'))
-	{
-		$contents = File::get(path('storage').'docs/'.$section.'.md');
-	}
-	else
-	{
-		$contents = File::get(path('storage').'docs/home.md');
-	}
-
-	if ($contents)
+	if ($contents = Helpers::content($section, $page))
 	{
 		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
 		$content = str_replace('/docs', URL::to().'docs', $content);
@@ -87,8 +72,11 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 	// Make it work locally
 	$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
 
+	// Make the title
+	$title = Helpers::title($content).'Laravel Documentation';
+
 	return View::make('docs.index')
-		->nest('header', 'partials.header', array('section' => $section, 'page' => $page))
+		->nest('header', 'partials.header', array('title' => $title, 'section' => $section, 'page' => $page))
 		->nest('footer', 'partials.footer')
 		->with('sidebar', $sidebar)
 		->with('section', $section)

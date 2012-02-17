@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Laravel - A Clean &amp; Classy PHP Framework</title>
+		<title><?php echo $title; ?></title>
 		<meta name="description" content="Laravel is a clean and classy PHP framework with minimal configuration and expressive syntax. RESTful routing; ORM; beautiful code.">
 		<meta name="keywords" content="php framework, framework, restful routing, restful, clean php">
 		<meta name="robots" content="index,follow">
