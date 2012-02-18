@@ -19,15 +19,27 @@ class Helpers {
 
 	public static function content($section = null, $page = null)
 	{
+		if ( ! $section)
+		{
+			return File::get(path('storage').'docs/home.md');
+		}
+
 		if ($section and $page and is_file(path('storage').'docs/'.$section.'/'.$page.'.md'))
 		{
 			return File::get(path('storage').'docs/'.$section.'/'.$page.'.md');
 		}
-		elseif ($section and is_file(path('storage').'docs/'.$section.'.md'))
+		elseif ($section)
 		{
-			return File::get(path('storage').'docs/'.$section.'.md');
+			if (is_file(path('storage').'docs/'.$section.'.md'))
+			{
+				return File::get(path('storage').'docs/'.$section.'.md');
+			}
+			elseif (is_file(path('storage').'docs/'.$section.'/home.md'))
+			{
+				return File::get(path('storage').'docs/'.$section.'/home.md');
+			}
 		}
 
-		return File::get(path('storage').'docs/home.md');
+		return null;
 	}
 }

@@ -58,11 +58,13 @@ Route::get('typography', function()
 
 Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 {
-	if ($contents = Helpers::content($section, $page))
+	if ( ! $contents = Helpers::content($section, $page))
 	{
-		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
-		$content = str_replace('/docs', URL::to().'docs', $content);
+		return Response::error('404');
 	}
+
+	$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
+	$content = str_replace('/docs', URL::to().'docs', $content);
 
 	$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
 
@@ -101,6 +103,7 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 
 Event::listen('404', function()
 {
+	var_dump('404'); die;
 	return Response::error('404');
 });
 
