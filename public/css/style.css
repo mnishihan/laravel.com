@@ -2424,6 +2424,9 @@ i.twitter {
 .sidebar ul li li {
   border: none;
 }
+.sidebar ul li span {
+  color: #fff;
+}
 .sidebar ul li:last-child {
   border-bottom: 1px dashed #6a6a6a;
 }

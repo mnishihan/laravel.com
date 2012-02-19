@@ -48,43 +48,7 @@ Route::get('/, home', function()
 		->nest('footer', 'partials.footer');
 });
 
-Route::get('typography', function()
-{
-	return View::make('home.typography')
-		->nest('sidebar', 'partials.sidebar')
-		->nest('header', 'partials.header')
-		->nest('footer', 'partials.footer');
-});
-
-Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
-{
-	if ( ! $contents = Helpers::content($section, $page))
-	{
-		return Response::error('404');
-	}
-
-	$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
-	$content = str_replace('/docs', URL::to().'docs', $content);
-
-	$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
-
-	// For some reason the list is getting br tags.
-	$sidebar = str_replace('<br />', '', $sidebar);
-
-	// Make it work locally
-	$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
-
-	// Make the title
-	$title = Helpers::title($content).'Laravel Documentation';
-
-	return View::make('docs.index')
-		->nest('header', 'partials.header', array('title' => $title, 'section' => $section, 'page' => $page))
-		->nest('footer', 'partials.footer')
-		->with('sidebar', $sidebar)
-		->with('section', $section)
-		->with('page', $page)
-		->with('content', $content);
-});
+Route::get('docs/(:any?)/(:any?)', 'docs@index');
 
 /*
 |--------------------------------------------------------------------------
