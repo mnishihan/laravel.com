@@ -14,7 +14,7 @@
 
 		<div class="screencast row">
 			<div class="video span5">
-				<iframe src="http://www.screenr.com/embed/yPVs" width="385" height="235"></iframe>
+				<iframe src="http://www.screenr.com/embed/oijs" width="385" height="235"></iframe>
 			</div>
 			<div class="introduction span6">
 				<h3>A QUICK INTRODUCTION TO LARAVEL 3.0</h3>
