@@ -3,8 +3,8 @@ $(document).ready(function() {
 	var parent_folder = url.substr(0, url.lastIndexOf('/'));
 	var active = url.substr(0, url.length-document.location.hash.length);
 
-	$('.sidebar ul ul').hide();
-	$('.sidebar ul ul').each(function() {
+	$('.docs.sidebar ul ul').hide();
+	$('.docs.sidebar ul ul').each(function() {
 		$(this).parent('li').addClass('close');
 		var anchor = $(this).prev('a').attr('href');
 		if (anchor == active) {
