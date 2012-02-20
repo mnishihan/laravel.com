@@ -44,7 +44,7 @@ Route::get('/, home', function()
 
 	return View::make('home.index')
 		->with('quote', $quote)
-		->nest('header', 'partials.header')
+		->nest('header', 'partials.header', array('title' => 'Laravel - A Clean &amp; Classy PHP Framework'))
 		->nest('footer', 'partials.footer');
 });
 
@@ -58,26 +58,13 @@ Route::get('typography', function()
 
 Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 {
-	$content = '';
-
-	if ($section and $page and is_file(path('storage').'docs/'.$section.'/'.$page.'.md'))
+	if ( ! $contents = Helpers::content($section, $page))
 	{
-		$contents = File::get(path('storage').'docs/'.$section.'/'.$page.'.md');
-	}
-	elseif ($section and is_file(path('storage').'docs/'.$section.'.md'))
-	{
-		$contents = File::get(path('storage').'docs/'.$section.'.md');
-	}
-	else
-	{
-		$contents = File::get(path('storage').'docs/home.md');
+		return Response::error('404');
 	}
 
-	if ($contents)
-	{
-		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
-		$content = str_replace('/docs', URL::to().'docs', $content);
-	}
+	$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
+	$content = str_replace('/docs', URL::to().'docs', $content);
 
 	$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
 
@@ -87,8 +74,11 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 	// Make it work locally
 	$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
 
+	// Make the title
+	$title = Helpers::title($content).'Laravel Documentation';
+
 	return View::make('docs.index')
-		->nest('header', 'partials.header', array('section' => $section, 'page' => $page))
+		->nest('header', 'partials.header', array('title' => $title, 'section' => $section, 'page' => $page))
 		->nest('footer', 'partials.footer')
 		->with('sidebar', $sidebar)
 		->with('section', $section)
@@ -113,6 +103,7 @@ Route::get('docs/(:any?)/(:any?)', function($section = null, $page = null)
 
 Event::listen('404', function()
 {
+	var_dump('404'); die;
 	return Response::error('404');
 });
 

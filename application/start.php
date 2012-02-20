@@ -38,3 +38,9 @@ Autoloader::directories(array(
 	path('app').'models',
 	path('app').'libraries',
 ));
+
+View::composer('error.404', function($view)
+{
+	$view->nest('header', 'partials.header', array('title' => '404 Error - Laravel'));
+	$view->nest('footer', 'partials.footer');
+});
