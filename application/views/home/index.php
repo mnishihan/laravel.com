@@ -17,9 +17,9 @@
 				<iframe src="http://www.screenr.com/embed/oijs" width="385" height="235"></iframe>
 			</div>
 			<div class="introduction span6">
-				<h3>A QUICK INTRODUCTION TO LARAVEL 3.0</h3>
-				<p>In this screencast Taylor Otwell, the author of Laravel, covers the highlights of Laravel 3.0 so you can
-				get a glimpse of its elegant routing and expressive syntax. This is a great place to start learning!</p>
+				<h3>DIVING INTO LARAVEL 3.0 - ROUTING</h3>
+				<p>In this screencast Taylor Otwell, the author of Laravel, covers the highlights of routing in Laravel 3.0
+				so you can get a glimpse of its simple and expressive syntax. This is a great place to start learning!</p>
 			</div>
 		</div>
 
