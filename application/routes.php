@@ -55,6 +55,13 @@ Route::get('about', function()
 		->nest('footer', 'partials.footer');
 });
 
+Route::get('(3)', function()
+{
+	return View::make('pages.three')
+		->nest('header', 'partials.header', array('title' => 'Laravel 3. Elegance Has Arrived.'))
+		->nest('footer', 'partials.footer');
+});
+
 Route::get('docs/(:any?)/(:any?)', 'docs@index');
 
 /*
