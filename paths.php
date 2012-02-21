@@ -8,6 +8,16 @@
  * @link     http://laravel.com
  */
 
+$host = $_SERVER['HTTP_HOST'];
+if (strpos($host, 'localhost') !== FALSE)
+{
+	$_SERVER['LARAVEL_ENV'] = 'local';
+}
+else
+{
+	$_SERVER['LARAVEL_ENV'] = 'production';
+}
+
 // --------------------------------------------------------------
 // Initialize the web variable if it doesn't exist.
 // --------------------------------------------------------------
@@ -70,11 +80,11 @@ foreach ($paths as $name => $path)
 
 /**
  * A global path helper function.
- * 
+ *
  * <code>
  *     $storage = path('storage');
  * </code>
- * 
+ *
  * @param  string  $path
  * @return string
  */
@@ -85,7 +95,7 @@ function path($path)
 
 /**
  * A global path setter function.
- * 
+ *
  * @param  string  $path
  * @param  string  $value
  * @return void
