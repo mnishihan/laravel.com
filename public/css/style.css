@@ -2971,6 +2971,26 @@ i.github {
 i.twitter {
   background-position: 0 0;
 }
+.sidebar form {
+  margin: 0;
+}
+.sidebar form input {
+  background: #484a4a;
+  color: #afb2b2;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  line-height: 12px;
+}
+.sidebar form:-moz-placeholder {
+  color: #afb2b2;
+}
+.sidebar form::-webkit-input-placeholder {
+  color: black;
+  font-family: "droid-serif", serif;
+  font-size: 12px;
+}
 .sidebar h3 {
   color: #fff;
   margin-bottom: 12px;
@@ -3002,22 +3022,22 @@ i.twitter {
 .sidebar ul li:last-child {
   border-bottom: 1px dashed #6a6a6a;
 }
-.sidebar ul li.open a {
+.sidebar ul li.nav-open a {
   background: url(../img/icons/minus.png) no-repeat right center;
   padding-right: 10px;
 }
-.sidebar ul li.open li {
+.sidebar ul li.nav-open li {
   display: block;
   border: none;
 }
-.sidebar ul li.open li a {
+.sidebar ul li.nav-open li a {
   background: none;
 }
-.sidebar ul li.close a {
+.sidebar ul li.nav-close a {
   background: url(../img/icons/plus.png) no-repeat right center;
   padding-right: 10px;
 }
-.sidebar ul li.close li a {
+.sidebar ul li.nav-close li a {
   background: none;
 }
 .pull-right {

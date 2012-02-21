@@ -1,4 +1,22 @@
 .sidebar {
+	form {
+		margin: 0;
+		input {
+			background: #484a4a;
+			color: #afb2b2;
+			border: none;
+			.border-radius(10px);
+			line-height: 12px;
+		}
+		&:-moz-placeholder {
+			color: #afb2b2;
+		}
+		&::-webkit-input-placeholder {
+			color: black;
+			font-family: "droid-serif", serif;
+			font-size: 12px;
+		}
+	}
 	h3 {
 		color: #fff;
 		margin-bottom: 12px;
@@ -30,7 +48,7 @@
 		li:last-child {
 			border-bottom: 1px dashed #6a6a6a;
 		}
-		li.open {
+		li.nav-open {
 			a {
 				background: url(../img/icons/minus.png) no-repeat right center;
 				padding-right: 10px;
@@ -43,7 +61,7 @@
 				}
 			}
 		}
-		li.close {
+		li.nav-close {
 			a {
 				background: url(../img/icons/plus.png) no-repeat right center;
 				padding-right: 10px;
