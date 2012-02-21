@@ -22,6 +22,14 @@
 
 				<h2>History</h2>
 
+				<ul class="thumbnails">
+					<li class="span4">
+						<a href="#" class="thumbnail">
+							<img src="<?php echo asset('img/taylor.png'); ?>" alt="taylor otwell">
+						</a>
+					</li>
+				</ul>
+
 				<p>
 					Hi. I'm Taylor Otwell and I created Laravel in April of 2011. I love building tools that make development enjoyable,
 					and that's why I created Laravel. After exploring and enjoying frameworks, I needed something that was up-to-date with
