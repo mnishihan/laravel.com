@@ -15,6 +15,13 @@
 		<div class="boxes row">
 			<div class="span6">
 				<div class="documentation">
+					<h3>INCREDIBLY WELL DOCUMENTED</h3>
+					<p>A class API just doesn't cut it. Laravel has great documentation to help you get up to speed as quickly as possible. It's readable and thorough. You'll love it.</p>
+					<a href="<?php echo url('docs'); ?>" class="yellow">view documentation &raquo;</a>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="documentation">
 					<h3>DATABASE MIGRATIONS</h3>
 					<p>Laravel 3 includes a beautiful, fluent database migration system. Forget all of that vendor specific SQL and gain control of your database.</p>
 					<a href="<?php echo url('docs/database/schema'); ?>" class="yellow">start migrating &raquo;</a>
@@ -39,6 +46,13 @@
 					<h3>ARTISAN CLI</h3>
 					<p>Artisan, Laravel 3's great command-line tool, makes it a piece of cake to install bundles, test your application, run migrations, and do pretty much anything else you can think of!</p>
 					<a href="<?php echo url('docs/artisan/commands'); ?>" class="yellow">explore the cli &raquo;</a>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="artisan">
+					<h3>SQL SERVER SUPPORT</h3>
+					<p>Microsoft fans rejoice! SQL Server is now fully supported by the fluent query builder and migration system. Welcome to the Laravel family!</p>
+					<a href="<?php echo url('docs/database/fluent'); ?>" class="yellow">get your data on &raquo;</a>
 				</div>
 			</div>
 		</div>
