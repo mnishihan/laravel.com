@@ -45,7 +45,7 @@
 							<div class="nav-collapse">
 								<ul class="nav pull-right">
 									<li><a href="<?php echo URL::to(); ?>">HOME</a></li>
-									<li><a href="#">ABOUT</a></li>
+									<li><a href="<?php echo url('about'); ?>">ABOUT</a></li>
 									<li><a href="http://forums.laravel.com">FORUMS</a></li>
 									<li><a href="http://bundles.laravel.com">BUNDLES</a></li>
 									<li class="dropdown">
