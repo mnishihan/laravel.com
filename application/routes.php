@@ -48,6 +48,13 @@ Route::get('/, home', function()
 		->nest('footer', 'partials.footer');
 });
 
+Route::get('about', function()
+{
+	return View::make('pages.about')
+		->nest('header', 'partials.header', array('title' => 'About the Laravel PHP Framework'))
+		->nest('footer', 'partials.footer');
+});
+
 Route::get('docs/(:any?)/(:any?)', 'docs@index');
 
 /*
