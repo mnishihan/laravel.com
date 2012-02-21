@@ -2864,6 +2864,7 @@ header a:hover {
   padding: 5px;
   border-top: 1px solid #fff;
   background-color: #fff;
+  width: 50%;
 }
 .content.docs table th + th,
 .content.docs table td + td,
