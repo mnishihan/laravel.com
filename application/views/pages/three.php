@@ -45,6 +45,14 @@
 
 				<p><a href="<?php echo url('docs/testing'); ?>">TDD FTW!</a></p>
 
+				<h2>Events</h2>
+
+				<p>
+					A simple event system has been integrated into Laravel, making it easier for you to easily build flexible, de-coupled applications.
+				</p>
+
+				<p><a href="<?php echo url('docs/events'); ?>">TDD FTW!</a></p>
+
 				<h2>SQL Server Support</h2>
 
 				<p>
