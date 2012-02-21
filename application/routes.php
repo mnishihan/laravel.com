@@ -58,6 +58,7 @@ Route::get('about', function()
 Route::get('(3)', function()
 {
 	return View::make('pages.three')
+		->with('quote', $quote)
 		->nest('header', 'partials.header', array('title' => 'Laravel 3. Elegance Has Arrived.'))
 		->nest('footer', 'partials.footer');
 });

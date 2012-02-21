@@ -1,65 +1,46 @@
 <?php echo $header; ?>
+<div class="hero-unit">
+	<div class="container">
+		<h1>Laravel 3. Elegance has arrived.</h1>
+		<p>Laravel is a clean and classy framework for PHP web development. Freeing you from
+			spaghetti code, Laravel helps you<br> create wonderful applications using simple, expressive
+			syntax. Development should be a creative experience<br> that you enjoy, not something that is
+			painful. Enjoy the fresh air.</p>
+	</div>
+</div>
 
-<div class="container main">
-	<div class="row">
-		<div class="content span12">
-			<div class="well">
+<div class="midcontent">
+	<div class="container">
 
-				<h1>Laravel 3. Elegance Has Arrived.</h1>
-
-				<h2>Bundles</h2>
-
-				<p>
-					Bundles are an amazing way to package and share Laravel code. They can have their own routes, views, models, migrations,
-					controllers, and anything else you can think of. Installing them is a breeze thanks to the new Artisan command-line
-					and the bundle directory. Create your own and share it with the community. Maybe it will even be a featured on the Laravel website!  
-				</p>
-
-				<p><a href="<?php echo url('docs/bundles'); ?>">Learn more about bundles!</a></p>
-
-				<h2>Migrations</h2>
-
-				<p>
-					Migrations are like version control for your database, and once you've used them, you never go back. Laravel now includes
-					an amazing, fluent database migration system. You don't need to worry about vendor specific SQL, just use the beautiful,
-					elegant syntax provided by the Laravel schema builder.  
-				</p>
-
-				<p><a href="<?php echo url('docs/database/schema'); ?>">Dig into migrations!</a></p>
-
-				<h2>Artisan CLI</h2>
-
-				<p>
-					The wonderful new "Artisan" CLI is packed with awesome commands to help you get the most out of Laravel. It's painless
-					to install bundles, run migrations, run tests, and more.
-				</p>
-
-				<p><a href="<?php echo url('docs/artisan/commands'); ?>">Get started with the CLI!</a></p>
-
-				<h2>Unit Test Integration</h2>
-
-				<p>
-					Laravel 3 provides amazing integration with PHPUnit, a popular PHP unit testing library. You can easily test your application,
-					bundles, and even the Laravel framework itself. It couldn't be easier.
-				</p>
-
-				<p><a href="<?php echo url('docs/testing'); ?>">TDD FTW!</a></p>
-
-				<h2>Events</h2>
-
-				<p>
-					A simple event system has been integrated into Laravel, making it easier for you to easily build flexible, de-coupled applications.
-				</p>
-
-				<p><a href="<?php echo url('docs/events'); ?>">TDD FTW!</a></p>
-
-				<h2>SQL Server Support</h2>
-
-				<p>
-					Microsoft fans rejoice! SQL Server is now supported by the fluent query builder and database migration system.
-				</p>
+		<div class="boxes row">
+			<div class="span6">
+				<div class="documentation">
+					<h3>DATABASE MIGRATIONS</h3>
+					<p>Laravel 3 includes a beautiful, fluent database migration system. Forget all of that vendor specific SQL and gain control of your database.</p>
+					<a href="<?php echo url('docs/database/schema'); ?>" class="yellow">start migrating &raquo;</a>
+				</div>
 			</div>
-
+			<div class="span6">
+				<div class="bundles">
+					<h3>GRAB SOME BUNDLES</h3>
+					<p>Bundles are a great way to package and share Laravel code. They can be anything - from a complete ORM or simple debugging tools, and it's a breeze to drop them into your application!</p>
+					<a href="http://bundles.laravel.com" class="yellow">BUNDLE LIBRARY &raquo;</a>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="testing">
+					<h3>UNIT TESTING INTEGRATION</h3>
+					<p>Make sure your code is up to snuff with Laravel's wonderful PHPUnit integration. It's a breeze to start testing your application and bundles.</p>
+					<a href="<?php echo url('docs/testing'); ?>" class="yellow">red, green, refactor. &raquo;</a>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="artisan">
+					<h3>ARTISAN CLI</h3>
+					<p>Artisan, Laravel 3's great command-line tool, makes it a piece of cake to install bundles, test your application, run migrations, and do pretty much anything else you can think of!</p>
+					<a href="<?php echo url('docs/artisan/commands'); ?>" class="yellow">explore the cli &raquo;</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
