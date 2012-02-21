@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="span6">
-				<div class="documentation">
+				<div class="migrations">
 					<h3>DATABASE MIGRATIONS</h3>
 					<p>Laravel 3 includes a beautiful, fluent database migration system. Forget all of that vendor specific SQL and gain control of your database.</p>
 					<a href="<?php echo url('docs/database/schema'); ?>" class="yellow">start migrating &raquo;</a>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="span6">
-				<div class="testing">
+				<div class="documentation">
 					<h3>UNIT TESTING INTEGRATION</h3>
 					<p>Make sure your code is up to snuff with Laravel's wonderful PHPUnit integration. It's a breeze to start testing your application and bundles.</p>
 					<a href="<?php echo url('docs/testing'); ?>" class="yellow">red, green, refactor. &raquo;</a>
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div class="span6">
-				<div class="artisan">
+				<div class="documentation">
 					<h3>SQL SERVER SUPPORT</h3>
 					<p>Microsoft fans rejoice! SQL Server is now fully supported by the fluent query builder and migration system. Welcome to the Laravel family!</p>
 					<a href="<?php echo url('docs/database/fluent'); ?>" class="yellow">get your data on &raquo;</a>
