@@ -2,7 +2,7 @@
 
 <div class="container main">
 	<div class="row">
-		<div class="content span12">
+		<div class="content about span12">
 			<div class="well">
 
 				<h1>About Laravel</h1>
@@ -10,7 +10,7 @@
 				<p>
 					Laravel is a PHP framework committed to elegance and simplicity. Programming doesn't have to be painful.
 					In fact, it can be enjoyable with the right tools. Laravel is one of those tools.
-					Dig into its <a href="<?php echo url('docs'); ?>">wonderful documentation</a> to learn more.  
+					Dig into its <a href="<?php echo url('docs'); ?>">wonderful documentation</a> to learn more.
 				</p>
 
 				<p>
@@ -22,27 +22,26 @@
 
 				<h2>History</h2>
 
-				<ul class="thumbnails">
-					<li class="span4">
-						<a href="#" class="thumbnail">
-							<img src="<?php echo asset('img/taylor.png'); ?>" alt="taylor otwell">
-						</a>
-					</li>
-				</ul>
+				<div class="row">
+					<div class="span3">
+						<img src="<?php echo asset('img/taylor.png'); ?>" class="thumbnail" alt="taylor otwell">
+					</div>
+					<div class="span8">
+						<p>
+							Hi. I'm Taylor Otwell and I created Laravel in April of 2011. I love building tools that make development enjoyable,
+							and that's why I created Laravel. After exploring and enjoying frameworks, I needed something that was up-to-date with
+							the latest PHP 5.3 has to offer while maintaining a low barrier of entry through great documentation. Sadly, I didn't
+							find what I was looking for. So, I began writing a framework that was powerful and flexible, yet intuitive and expressive.
+							A few months later, Laravel was born, and its had a growing and friendly community ever since. I think you'll love joining the club.
+						</p>
 
-				<p>
-					Hi. I'm Taylor Otwell and I created Laravel in April of 2011. I love building tools that make development enjoyable,
-					and that's why I created Laravel. After exploring and enjoying frameworks, I needed something that was up-to-date with
-					the latest PHP 5.3 has to offer while maintaining a low barrier of entry through great documentation. Sadly, I didn't
-					find what I was looking for. So, I began writing a framework that was powerful and flexible, yet intuitive and expressive.
-					A few months later, Laravel was born, and its had a growing and friendly community ever since. I think you'll love joining the club.
-				</p>
-
-				<p>
-					Currently, I'm Software Engineer at <a href="http://userscape.com">UserScape</a>, where I work on the next generation of
-					<a href="http://helpspot.com">HelpSpot</a>. Previously, I developed Microsoft .NET solutions for one of the largest freight
-					carriers in the nation.
-				</p>
+						<p>
+							Currently, I'm Software Engineer at <a href="http://userscape.com">UserScape</a>, where I work on the next generation of
+							<a href="http://helpspot.com">HelpSpot</a>. Previously, I developed Microsoft .NET solutions for one of the largest freight
+							carriers in the nation.
+						</p>
+					</div>
+				</div>
 
 				<h2>Laravel's License</h2>
 
