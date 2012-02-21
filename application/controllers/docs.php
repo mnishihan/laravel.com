@@ -19,7 +19,7 @@ class Docs_Controller extends Base_Controller {
 
 	public function action_index($section = null, $page = null)
 	{
-		if ( ! $contents = Helpers::content($section, $page))
+		if ( ! $contents = Docs::content($section, $page))
 		{
 			return Response::error('404');
 		}
@@ -36,7 +36,7 @@ class Docs_Controller extends Base_Controller {
 		$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
 
 		// Make the title
-		$title = Helpers::title($content).'Laravel Documentation';
+		$title = Docs::title($content).'Laravel Documentation';
 
 		return $this->layout->with('title', $title)
 			->with('section', $section)
