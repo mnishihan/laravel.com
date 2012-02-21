@@ -82,7 +82,6 @@ Route::get('docs/(:any?)/(:any?)', 'docs@index');
 
 Event::listen('404', function()
 {
-	var_dump('404'); die;
 	return Response::error('404');
 });
 
