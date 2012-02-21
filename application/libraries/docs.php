@@ -1,4 +1,17 @@
 <?php
+/**
+ * Docs library
+ *
+ * This is a simple helper for the documentation area.
+ *
+ * @license     http://www.opensource.org/licenses/mit MIT License
+ * @copyright   Laravel
+ * @author      Laravel Dev Team
+ * @link        http://laravel.com/docs
+ * @package     Laravel
+ * @subpackage  Libraries
+ * @filesource
+ */
 class Docs {
 
 	/**
