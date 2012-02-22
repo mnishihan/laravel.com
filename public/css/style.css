@@ -2901,6 +2901,7 @@ header a:hover {
 .midcontent .screencast {
   background: url(../img/bg-screencast.png) no-repeat right center;
   position: relative;
+  margin-bottom: 36px;
 }
 .midcontent .screencast .video {
   background: url(../img/bg-screencast-holder.png) no-repeat;
