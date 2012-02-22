@@ -1,8 +1,8 @@
 <?php echo $header; ?>
 <div class="hero-unit">
 	<div class="container">
-		<h1><span>Elegance has finally arrived for PHP</span></h1>
-		<p>Laravel v3 is a clean and classy framework for PHP web development. Freeing you from
+		<h1><span>Laravel 3. Elegance has arrived to PHP.</span></h1>
+		<p>Laravel 3 is a clean and classy framework for PHP web development. Freeing you from
 			spaghetti code, Laravel helps you<br> create wonderful applications using simple, expressive
 			syntax. Development should be a creative experience<br> that you enjoy, not something that is
 			painful. Enjoy the fresh air.</p>
