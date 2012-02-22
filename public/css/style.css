@@ -2747,6 +2747,30 @@ a.thumbnail:hover {
 .thumbnail .caption {
   padding: 9px;
 }
+.label {
+  padding: 1px 3px 2px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.label-important {
+  background-color: #b94a48;
+}
+.label-warning {
+  background-color: #f89406;
+}
+.label-success {
+  background-color: #468847;
+}
+.label-info {
+  background-color: #3a87ad;
+}
 .hero-unit {
   z-index: 5;
   margin-top: -15px;
