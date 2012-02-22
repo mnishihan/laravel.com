@@ -38,6 +38,8 @@
 					<a href="http://bundles.laravel.com" class="yellow">BUNDLE LIBRARY &raquo;</a>
 				</div>
 			</div>
+		</div>
+		<div class="boxes row">
 			<div class="span6">
 				<div class="testimonials">
 					<h3>ALL THE COOL KIDS ARE DOING IT</h3>

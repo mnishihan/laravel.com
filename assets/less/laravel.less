@@ -105,32 +105,34 @@ header {
 		}
 	}
 
+	.boxes:first-child{
+		margin-top: 36px;
+	}
 	.boxes {
 		color: #c8cccc;
 		font-family: @baseFontFamily;
 		font-size: @baseFontSize;
 		line-height: @baseLineHeight;
-		margin-top: 36px;
+
 		position: relative;
+
+		.span6 {
+			div {
+				padding-left: 65px;
+				margin-bottom: 36px;
+			}
+		}
 		.documentation {
 			background: url(../img/icons/documentation.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
 		}
 		.bundles {
 			background: url(../img/icons/bundle.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
 		}
 		.testimonials {
 			background: url(../img/icons/testimonial.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
 		}
 		.github {
 			background: url(../img/icons/github.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
 			position: relative;
 			h3:before{
 				content:"";
@@ -143,14 +145,16 @@ header {
 			}
 		}
 		.migrations {
-			background: url(../img/icons/migrations.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
+			background: url(../img/v3/migrations.png) no-repeat 5px top;
 		}
 		.artisan {
-			background: url(../img/icons/artisan.png) no-repeat 5px top;
-			padding-left: 65px;
-			margin-bottom: 36px;
+			background: url(../img/v3/cli.png) no-repeat 5px top;
+		}
+		.database {
+			background: url(../img/v3/database.png) no-repeat 5px top;
+		}
+		.unit-test {
+			background: url(../img/v3/unit-test.png) no-repeat 5px top;
 		}
 	}
 }

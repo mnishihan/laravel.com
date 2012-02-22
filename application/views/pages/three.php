@@ -1,8 +1,8 @@
 <?php echo $header; ?>
 <div class="hero-unit">
 	<div class="container">
-		<h1>Laravel 3. Elegance has arrived.</h1>
-		<p>Laravel is a clean and classy framework for PHP web development. Freeing you from
+		<h1><span>Elegance has finally arrived for PHP</span></h1>
+		<p>Laravel v3 is a clean and classy framework for PHP web development. Freeing you from
 			spaghetti code, Laravel helps you<br> create wonderful applications using simple, expressive
 			syntax. Development should be a creative experience<br> that you enjoy, not something that is
 			painful. Enjoy the fresh air.</p>
@@ -27,6 +27,8 @@
 					<a href="<?php echo url('docs/database/schema'); ?>" class="yellow">start migrating &raquo;</a>
 				</div>
 			</div>
+		</div>
+		<div class="boxes row">
 			<div class="span6">
 				<div class="bundles">
 					<h3>GRAB SOME BUNDLES</h3>
@@ -35,12 +37,14 @@
 				</div>
 			</div>
 			<div class="span6">
-				<div class="documentation">
+				<div class="unit-test">
 					<h3>UNIT TESTING INTEGRATION</h3>
 					<p>Make sure your code is up to snuff with Laravel's wonderful PHPUnit integration. It's a breeze to start testing your application and bundles.</p>
 					<a href="<?php echo url('docs/testing'); ?>" class="yellow">red, green, refactor. &raquo;</a>
 				</div>
 			</div>
+		</div>
+		<div class="boxes row">
 			<div class="span6">
 				<div class="artisan">
 					<h3>ARTISAN CLI</h3>
@@ -49,7 +53,7 @@
 				</div>
 			</div>
 			<div class="span6">
-				<div class="documentation">
+				<div class="database">
 					<h3>SQL SERVER SUPPORT</h3>
 					<p>Microsoft fans rejoice! SQL Server is now fully supported by the fluent query builder and migration system. Welcome to the Laravel family!</p>
 					<a href="<?php echo url('docs/database/fluent'); ?>" class="yellow">get your data on &raquo;</a>
