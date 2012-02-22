@@ -2801,6 +2801,7 @@ a.thumbnail:hover {
 }
 .hero-unit h1 span {
   font-weight: normal;
+  font-size: 27px;
 }
 .hero-unit h1:after {
   content: url(../img/jumbo-right.png);
