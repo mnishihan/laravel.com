@@ -58,7 +58,8 @@ class Docs {
 	 */
 	public static function content($section = null, $page = null)
 	{
-		if ($contents = Cache::get(rtrim($section.'|'.$page, '|')))
+		$cache_key = "docs_" . trim("{$section}_{$page}"," _");
+		if ($contents = Cache::get($cache_key))
 		{
 			return $contents;
 		}
@@ -86,7 +87,7 @@ class Docs {
 
 		if ($contents)
 		{
-			Cache::put(rtrim($section.'|'.$page, '|'), $contents, 10);
+			Cache::put($cache_key, $contents, 10);
 			return $contents;
 		}
 		return null;
