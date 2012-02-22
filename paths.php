@@ -7,17 +7,17 @@
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  * @link     http://laravel.com
  */
-
-$host = $_SERVER['HTTP_HOST'];
-if (strpos($host, 'localhost') !== FALSE)
-{
-	$_SERVER['LARAVEL_ENV'] = 'local';
+if(!isset($_SERVER['LARAVEL_ENV'])){
+	$host = $_SERVER['HTTP_HOST'];
+	if (strpos($host, 'localhost') !== FALSE)
+	{
+		$_SERVER['LARAVEL_ENV'] = 'local';
+	}
+	else
+	{
+		$_SERVER['LARAVEL_ENV'] = 'production';
+	}
 }
-else
-{
-	$_SERVER['LARAVEL_ENV'] = 'production';
-}
-
 // --------------------------------------------------------------
 // Initialize the web variable if it doesn't exist.
 // --------------------------------------------------------------
