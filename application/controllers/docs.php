@@ -19,28 +19,20 @@ class Docs_Controller extends Base_Controller {
 
 	public function action_index($section = null, $page = null)
 	{
-		if ( ! $contents = Docs::content($section, $page))
+		if ( ! $content = Docs::content($section, $page))
 		{
 			return Response::error('404');
 		}
 
-		$content = MarkdownExtended($contents, array('pre' => 'prettyprint'));
-		$content = str_replace('/docs', URL::to().'docs', $content);
-
-		$sidebar = MarkdownExtended(File::get(path('storage').'docs/contents.md'));
+		$sidebar = Docs::content('contents');
 
 		// For some reason the list is getting br tags.
 		$sidebar = str_replace('<br />', '', $sidebar);
-
-		// Make it work locally
-		$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
 
 		// Make the title
 		$title = Docs::title($content).'Laravel Documentation';
 
 		return $this->layout->with('title', $title)
-			->with('section', $section)
-			->with('page', $page)
 			->with('sidebar', $sidebar)
 			->with('section', $section)
 			->with('page', $page)

@@ -158,4 +158,3 @@ class MarkdownExtraExtended_Parser extends MarkdownExtra_Parser {
 		return "\n". $this->hashBlock($res)."\n\n";
 	}
 }
-?>
